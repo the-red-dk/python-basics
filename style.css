@@ -1,0 +1,107 @@
+body {
+    font-family: Gotham;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 1000px;
+}
+
+.heading {
+    font-family: "Gotham", Arial;
+    font-weight: 700;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(211, 210, 210);
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+}
+
+.lab-heading {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.data {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.footing {
+    font-size: 10px;
+    font-weight: 500;
+    font-style: italic;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mypages {
+    position: fixed;
+    right: 0px;
+    top: 80px;
+    border: black 1px solid;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 5px;
+}
+.github-icon, 
+.instagram-icon,
+.telegram-icon, 
+.reddit-icon, 
+.x-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.github-icon-container,
+.instagram-icon-container,
+.reddit-icon-container,
+.telegram-icon-container,
+.x-icon-container {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.github-icon-container .tooltip, 
+.instagram-icon-container .tooltip, 
+.reddit-icon-container .tooltip, 
+.telegram-icon-container .tooltip,
+.x-icon-container .tooltip {
+    position: absolute;
+    right: 44px;
+    font-family: arial;
+    font-size: 12px;
+    background-color: rgba(144, 138, 138, 0.3);
+    border-radius: 6px;
+    padding: 4px;
+    opacity: 0;
+    display: flex;
+}
+
+.github-icon-container:hover .tooltip,
+.instagram-icon-container:hover .tooltip, 
+.reddit-icon-container:hover .tooltip, 
+.telegram-icon-container:hover .tooltip, 
+.x-icon-container:hover .tooltip {
+    opacity: 1;
+    transition: opacity 0.2s;
+    
+}
+
+
