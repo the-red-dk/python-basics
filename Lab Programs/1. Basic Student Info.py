@@ -1,6 +1,6 @@
 name = input("Enter Student Name: ")
 usn = input("Enter Student USN: ")
-
+ 
 print("Enter marks of three subjects: ")
 m1 = int(input())
 m2 = int(input())
