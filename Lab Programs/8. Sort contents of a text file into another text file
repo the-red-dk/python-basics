@@ -1,0 +1,25 @@
+'''6. Develop a program to sort the contents of a text file and write the sorted contents
+into a separate text file. [Hint: Use string methods strip(), len(),
+list methods sort(), append(), and file methods open(), readlines(), and write()].'''
+
+
+file = open('text.txt')
+out  = open('result.txt', 'w')
+
+words = []
+
+for line in file.readlines():
+    line = line.strip().split()
+
+    for i in line:
+        words.append(i)
+        words.sort()
+        count = len(words)
+        for i in words:
+            out.write(i)
+            out.write('\n')
+
+out.write(f"Number of words are: {len(words)}")
+out.close()
+file.close()
+print(count)
